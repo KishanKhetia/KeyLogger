@@ -8,6 +8,8 @@ Captures keystrokes in real-time.
 Each keystroke is timestamped for accurate tracking.
 ### Session Management: 
 Logs the start and end of each logging session.
+### Encryption and Decryption (Fernet):
+Logs are encrypted using the Fernet symmetric encryption scheme after the session has ended, providing confidentiality and data integrity.
 ### Customizable: 
 Easily configurable to specify logging directory and format.
 
@@ -32,8 +34,9 @@ Ensure the keylogger is used for ethical and legal purposes, such as monitoring 
 Respect user privacy and handle logged data securely.
 
 ## Dependencies:
-### Python 3.12.3
-### pynput library
+### -> Python 3.12.3
+### -> pynput library
+### -> cryptography library (for Fernet encryption)
 
 ## Disclaimer:
 This keylogger script is intended for educational and cybersecurity research purposes only. Misuse of this tool for unauthorized monitoring or malicious activities is strictly prohibited.
